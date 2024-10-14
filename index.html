@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter-container">
+    <h1>Currency Converter</h1>
+    <div class="currency-input">
+      <input type="number" id="amount" placeholder="Enter amount">
+    </div>
+    <div class="currency-selection">
+      <select id="fromCurrency">
+        <option value="USD">USD - US Dollar</option>
+        <option value="EUR">EUR - Euro</option>
+        <option value="GBP">GBP - British Pound</option>
+        <option value="IND">IND - Indian Rupee</option>
+        <option value="JPY">JPY - Japanese Yen</option>
+        <option value="CAD">CAD - Canadian Dollar</option>
+        <option value="AUD">AUD - Australian Dollar</option>
+        <option value="CNY">CNY - Chinese Yuan</option>
+        <option value="BRL">BRL - Brazilian Real</option>
+        <option value="ZAR">ZAR - South African Rand</option>
+      </select>
+      <select id="toCurrency">
+        <option value="USD">USD - US Dollar</option>
+        <option value="EUR">EUR - Euro</option>
+        <option value="GBP">GBP - British Pound</option>
+        <option value="INR">INR - Indian Rupee</option>
+        <option value="JPY">JPY - Japanese Yen</option>
+        <option value="CAD">CAD - Canadian Dollar</option>
+        <option value="AUD">AUD - Australian Dollar</option>
+        <option value="CNY">CNY - Chinese Yuan</option>
+        <option value="BRL">BRL - Brazilian Real</option>
+        <option value="ZAR">ZAR - South African Rand</option>
+      </select>
+    </div>
+    <button onclick="convertCurrency()">Convert</button>
+    <div class="result">
+      <p id="result"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
